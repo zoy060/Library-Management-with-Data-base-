@@ -33,6 +33,14 @@ require_once "includes/config_session.inc.php";
             width: 200px;
         }
 
+
+        .card-title, .card-text{
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+
     </style>
 
 </head>

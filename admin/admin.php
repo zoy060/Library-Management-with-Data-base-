@@ -45,7 +45,7 @@ require_once 'admin.control.php';
 
   <div class="container p-2">
     <div class="row row-cols-1 row-cols-md-5 g-4 ">
-      <form class="m-0 p-0 mt-3"> <button class="h-100 btn">
+      <form class="m-0 p-0 mt-3" action="add-new-book.php" method=""> <button class="h-100 btn">
           <div class="card h-100 p-0 m-0">
             <img src="../cover/add.png" class="card-img-top p-3 img" alt="">
             

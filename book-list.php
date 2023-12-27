@@ -21,20 +21,20 @@ function bookList($bookList)
         $n = sizeof($bookList);
 
         for ($i = $n - 1; $i >= 0; $i--) {
-                echo '<form class="m-0 p-0 mt-3">      <button class="h-100 btn">';
-                echo '<div class="card h-100 p-0 m-0">';
+                echo '<a class="btn" href="https://www.youtube.com/watch?app=desktop&v=cE3U24qSNUQ">';
+                echo '<div class="card ">';
 
                 echo '<img src="cover/1 (' . ($n + 1 - $i) . ').webp" class="card-img-top p-3 img"> </img>';
 
                 echo '<div class="card-body">';
-                echo '<h5 class="card-title">' . $bookList[$i]["Title"] . '</h5>';
-                echo '<p class="card-text">Author : ' . $bookList[$i]["Author"] . ' </p>
+                echo '<h5 class="card-title" data-bs-toggle="tooltip" data-bs-html="true" title="'. $bookList[$i]["Title"] .'">' . $bookList[$i]["Title"] . '</h5>';
+                echo '<p class="card-text"  data-bs-toggle="tooltip" data-bs-html="true" title="'. $bookList[$i]["Author"] .'">Author : ' . $bookList[$i]["Author"] . ' </p>
                         </div>';
                 echo    '<div class="card-footer">
-                            <small class="text-muted">Price : ' . $bookList[$i]['Price'] . ' tk</small>
+                            <small class="text-muted" >Price : ' . $bookList[$i]['Price'] . ' tk</small>
                         </div>';
-                echo '    </div>
-                  </button>  </form>';
+                echo '  </div> 
+                         </a>';
         }
 }
 

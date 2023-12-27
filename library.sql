@@ -49,7 +49,7 @@ INSERT INTO `admin` (`admin_id`, `name`, `username`, `pass`, `email`) VALUES
 --
 
 CREATE TABLE `books` (
-  `Book_ID` int(11) NOT NULL,
+  `Book_ID` int(11) NOT NULL AUTO_INCREMENT,
   `Title` varchar(100) DEFAULT NULL,
   `Description` varchar(255) NOT NULL,
   `Author` varchar(50) DEFAULT NULL,
